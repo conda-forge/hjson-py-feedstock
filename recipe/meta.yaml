@@ -1,5 +1,5 @@
 {% set name = "hjson-py" %}
-{% set version = "3.0.2" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/hjson/hjson-{{ version }}.tar.gz
-  sha256: 2838fd7200e5839ea4516ece953f3a19892c41089f0d933ba3f68e596aacfcd5
+  sha256: 55af475a27cf83a7969c808399d7bccdec8fb836a07ddbd574587593b9cdcf75
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
